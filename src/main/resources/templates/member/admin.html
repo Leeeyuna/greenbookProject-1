@@ -99,7 +99,7 @@
 				<td th:text="${m.memberEmail}"></td>
 				<td th:text="${m.enrollDate}"></td>
 				<td th:text="${m.grade}"></td>
-				<td th:switch=${m.memberLevel}>
+				<td th:switch=${m.memberLevel}><!-- 현재 관리자일때 변경옵션없애 -->
 				<select th:case="1"class="input-form">
 						<option value="1" selected>관리자</option>
 						<option value="2">그린이</option>
